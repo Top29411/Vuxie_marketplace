@@ -1,6 +1,10 @@
 import { Link } from 'raviger'
+import {useEffect, useState} from 'react'
+import ReactLoading from "react-loading";
 
 const Card_detail =({images ,collection , price ,date, list, id}) =>{
+
+    const [loading , setLoading] = useState(false) ;
 
     return (
         <>
@@ -21,7 +25,15 @@ const Card_detail =({images ,collection , price ,date, list, id}) =>{
                             </div>
                         </div>
                     </div>
-                        <img src={images} className="lazy nft__item_preview" alt="" />
+                    {
+                        (loading)? "": 
+                        <ReactLoading type="spinningBubbles" color="#fff" />
+                    }
+                        <img 
+                        src={images}
+                        style={loading?{}:{display:'none'}}
+                        onLoad = {()=>setLoading(true)}
+                        className="lazy nft__item_preview" alt="" />
                 </div>
                 <div className="nft__item_info">
                         <h4>{collection}</h4>
