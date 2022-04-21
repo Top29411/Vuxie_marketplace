@@ -3,12 +3,13 @@ import Card_detail from './Card_detail';
 import { useMoralisWeb3Api } from "react-moralis";
 import { compose } from 'redux';
 
-    
+
    
 const NFT_cards =  () =>{
     
     const[cards, setCards] = useState([]) ;
     const[flg, setFlg] = useState(false) ;
+    const[nowCnt , setNowCnt] = useState (30) ;
     const Web3Api = useMoralisWeb3Api();
 
     // useEffect(()=>{
@@ -114,12 +115,13 @@ const NFT_cards =  () =>{
             
         // }
     },[]) ;
-    function calc() {
-        
+ 
+    const calc_more=()=> {
+        setNowCnt(nowCnt+50) ;
     }
     return (
         <div className="row" id='hidden_sh'>
-           { cards.map((card , idx)=>{
+           { cards.slice(0,nowCnt).map((card , idx)=>{
             //    console.log(card,idx,'ind');
                return(
                    <Card_detail
@@ -130,13 +132,12 @@ const NFT_cards =  () =>{
                         list={card.list}
                         date={card.date}
                         key={idx}
-                        onClick={()=> calc()}
                         
                    />
                )
             })}
             <div className="col-md-12 text-center">
-                <a id="loadmore" className="btn-main wow fadeInUp lead">Load more</a>
+                <a id="loadmore" onClick={calc_more} className="btn-main wow fadeInUp lead">Load more</a>
             </div>    
         </div>
     )
