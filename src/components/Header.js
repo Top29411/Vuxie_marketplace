@@ -31,7 +31,7 @@ const Header = () => {
                             <div className="de-flex-col">
                                 <div className="de-flex-col">
                                     <div id="logo">
-                                        <a href="03_grey-index.html">
+                                        <a href="#">
                                             <img alt="" src="images/logo-3.png" />
                                         </a>
                                     </div>
@@ -43,41 +43,41 @@ const Header = () => {
                             <div className="de-flex-col header-col-mid">
                                 <ul id="mainmenu">
                                     <li>
-                                        <a href="03_grey-index.html">Home<span></span></a>
+                                        <a href="#">Home<span></span></a>
                                         <ul>
-                                            <li><a href="03_grey-index.html">Homepage 1</a></li>
-                                            <li><a href="03_grey-index-2.html">Homepage 2</a></li>
-                                            <li><a href="03_grey-index-3.html">Homepage 3</a></li>
-                                            <li><a href="03_grey-index-4.html">Homepage 4</a></li>
+                                            <li><a href="#">Homepage 1</a></li>
+                                            <li><a href="#">Homepage 2</a></li>
+                                            <li><a href="#">Homepage 3</a></li>
+                                            <li><a href="#">Homepage 4</a></li>
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="03_grey-explore.html">Explore<span></span></a>
+                                        <a href="#">Explore<span></span></a>
                                         <ul>
-                                            <li><a href="03_grey-explore.html">Explore</a></li>
-                                            <li><a href="03_grey-explore-2.html">Explore 2</a></li>
-                                            <li><a href="03_grey-explore-music-nft.html">New: Music NFT</a></li>
-                                            <li><a href="03_grey-collection.html">Collections</a></li>
-                                            <li><a href="03_grey-live-auction.html">Live Auction</a></li>
-                                            <li><a href="03_grey-item-details.html">Item Details</a></li>
-                                            <li><a href="03_grey-help-center.html">Help Center</a></li>
+                                            <li><a href="#">Explore</a></li>
+                                            <li><a href="#">Explore 2</a></li>
+                                            <li><a href="#">New: Music NFT</a></li>
+                                            <li><a href="#">Collections</a></li>
+                                            <li><a href="#">Live Auction</a></li>
+                                            <li><a href="#">Item Details</a></li>
+                                            <li><a href="#">Help Center</a></li>
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="03_grey-author.html">Author<span></span></a>
+                                        <a href="#">Author<span></span></a>
                                         <ul>
-                                            <li><a href="03_grey-author.html">Author</a></li>
-                                            <li><a href="03_grey-profile.html">Profile</a></li>
-                                            <li><a href="03_grey-wallet.html">Wallet</a></li>
-                                            <li><a href="03_grey-create-options.html">Create</a></li>
-                                            <li><a href="03_grey-login.html">Login</a></li>
+                                            <li><a href="#">Author</a></li>
+                                            <li><a href="#">Profile</a></li>
+                                            <li><a href="#">Wallet</a></li>
+                                            <li><a href="#">Create</a></li>
+                                            <li><a href="#">Login</a></li>
                                         </ul>
                                     </li>                                    
                                     <li>
                                         <a href="#">Stats<span></span></a>
                                         <ul>
-                                            <li><a href="03_grey-activity.html">Activity</a></li>
-                                            <li><a href="03_grey-rankings.html">Rankings</a></li>
+                                            <li><a href="#">Activity</a></li>
+                                            <li><a href="#">Rankings</a></li>
                                         </ul>
                                     </li>
                                 </ul>
