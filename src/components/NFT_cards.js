@@ -112,7 +112,7 @@ const NFT_cards =  () =>{
                 )
             })}
             <div className="col-md-12 text-center">
-                <a id="loadmore" onClick={calc_more} className="btn-main wow fadeInUp lead">Load more</a>
+                <a onClick={calc_more} className="btn-main wow fadeInUp lead">Load more</a>
             </div>    
         </div>
     )
