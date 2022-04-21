@@ -81,14 +81,24 @@ const NFT_cards =  () =>{
 
 
     useEffect(()=>{
-
         const fetchData = async () => {
-             await Comp();
-            // lash.wait() ;
-            setMLoading(true) ;
             console.log('22222222');
+            await Comp();
+           // lash.wait() ;
+           setMLoading(true) ;
+       }
+        let lodaing = true;
+        try {
+            fetchData()
+        } catch (err) {
+            console.log(err)
         }
-        fetchData().catch(console.error);
+        return () => {
+            // cancel the subscription
+           setMLoading(false) ;
+        };
+        
+        // fetchData().catch(console.error);
        
     },[]) ;
  
@@ -96,7 +106,7 @@ const NFT_cards =  () =>{
         setNowCnt(nowCnt+50) ;
     }
     return (
-        <div className="row" onLoad = {()=>setMLoading(true)} id='hidden_sh'>
+        <div className="row" id='hidden_sh'>
             { cards.slice(0,nowCnt).map((card , idx)=>{
             //    console.log(card,idx,'ind');
                 return(
